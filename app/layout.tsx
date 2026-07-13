@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Space_Grotesk, Inter, JetBrains_Mono } from "next/font/google";
 import "./globals.css";
 import Sidebar from "@/components/Sidebar";
+import Scene from "@/components/Scene";
 
 const spaceGrotesk = Space_Grotesk({
   subsets: ["latin"],
@@ -22,7 +23,7 @@ const jetbrainsMono = JetBrains_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Subhash Chandra Peddireddy — Full Stack Developer",
+  title: "Subhash  Peddireddy — Full Stack Developer",
   description:
     "Frontend-focused Full Stack Developer specializing in React.js, Next.js, and TypeScript.",
 };
@@ -38,6 +39,7 @@ export default function RootLayout({
         className={`${spaceGrotesk.variable} ${inter.variable} ${jetbrainsMono.variable} font-body`}
       >
         <div className="ambient" />
+        <Scene/>
         <div className="grain" />
         <div className="relative z-[2] flex min-h-screen">
           <Sidebar />
