@@ -44,9 +44,9 @@ export default function Sidebar() {
         }`}
       >
         <div className="mb-11 mt-2">
-          <div className="mb-3.5 flex h-11 w-11 items-center justify-center rounded-[14px] bg-gradient-to-br from-mercury to-violet font-display text-lg font-bold text-[#05130f] shadow-[0_8px_24px_-8px_rgba(127,240,224,0.5)]">
+          {/* <div className="mb-3.5 flex h-11 w-11 items-center justify-center rounded-[14px] bg-gradient-to-br from-mercury to-violet font-display text-lg font-bold text-[#05130f] shadow-[0_8px_24px_-8px_rgba(127,240,224,0.5)]">
             {profile.initials}
-          </div>
+          </div> */}
           <div className="font-display text-[17px] font-semibold leading-tight">
             {profile.name}
           </div>
