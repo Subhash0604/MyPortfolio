@@ -38,7 +38,7 @@ export interface SkillIcon {
   color: string;
 }
 
-// Keys must match the `name` strings used in lib/data.ts skillGroups
+
 export const skillIcons: Record<string, SkillIcon> = {
   // Languages
   "Java": { Icon: DiJava, color: "#f89820" },
