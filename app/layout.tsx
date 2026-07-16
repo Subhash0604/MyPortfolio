@@ -23,14 +23,14 @@ const jetbrainsMono = JetBrains_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Subhash  Peddireddy — Full Stack Developer",
+  title: "Subhash Peddireddy — Full Stack Developer",
   description:
     "Frontend-focused Full Stack Developer specializing in React.js, Next.js, and TypeScript.",
 };
 
 export default function RootLayout({
   children,
-}: {
+}: {    
   children: React.ReactNode;
 }) {
   return (

@@ -1,4 +1,5 @@
 import { skillGroups } from "@/lib/data";
+import { skillIcons, fallbackSkillIcon } from "@/lib/skillIcons";
 
 export default function Skills() {
   return (
@@ -14,12 +15,19 @@ export default function Skills() {
             <h4 className="mb-3.5 font-mono text-[11px] uppercase tracking-wider text-warm">
               {group.label}
             </h4>
-            <div className="flex flex-wrap gap-1.5">
-              {group.items.map((item) => (
-                <span key={item} className="chip">
-                  {item}
-                </span>
-              ))}
+            <div className="flex flex-wrap gap-2">
+              {group.items.map((item) => {
+                const { Icon, color } = skillIcons[item] ?? fallbackSkillIcon;
+                return (
+                  <span
+                    key={item}
+                    className="chip flex items-center gap-1.5"
+                  >
+                    <Icon size={13} style={{ color }} />
+                    {item}
+                  </span>
+                );
+              })}
             </div>
           </div>
         ))}
